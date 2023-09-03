@@ -16,4 +16,7 @@ public class UserDao {
     public List<HashMap<String, Object>> getUsers() {
         return sqlSession.selectList("com.example.demo.sample.UserMapper.selectUsers");
     }
+    public int getUser() {
+        return sqlSession.selectOne("com.example.demo.sample.UserMapper.selectUser");
+    }
 }

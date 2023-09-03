@@ -6,4 +6,9 @@
         select * from user
     </select>
 
+    <select id="selectUser" resultType="int">
+        select
+            count(*)
+        from sample
+    </select>
 </mapper>

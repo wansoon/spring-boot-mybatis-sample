@@ -23,4 +23,7 @@ public class UserService {
         return userDao.getUsers();
     }
 
+    public int getUser() {
+        return userDao.getUser();
+    }
 }

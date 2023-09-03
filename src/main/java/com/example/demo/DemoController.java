@@ -23,4 +23,9 @@ public class DemoController {
     public List<HashMap<String, Object>> getUsersDao() {
         return userService.getUsersWithDao();
     }
+
+    @GetMapping("/user")
+    public int getUser() {
+        return userService.getUser();
+    }
 }
